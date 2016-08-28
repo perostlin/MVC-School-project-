@@ -1,0 +1,37 @@
+﻿@model RecensionsProjekt.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Din sida";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Din sida</h2>
+
+<div>
+    @if (System.IO.File.Exists(Server.MapPath("~/Images/ProfileImages/" + Model.ProfileImagePath)))
+    {
+        <img class="Images" src="~/Images/ProfileImages/@Model.ProfileImagePath" />
+    }
+    else
+    {
+        <img class="Images" src="~/Images/Shared/default-user-image.png" />
+    }
+</div>
+
+<div>
+    <p>
+        Förnamn: @Model.Firstname
+    </p>
+    <p>
+        Efternamn: @Model.Lastname
+    </p>
+    <p>
+        Användarnamn: @Model.Username
+    </p> 
+    <p>
+        Email: @Model.Email
+    </p>
+    <div>
+        @Html.ActionLink("Redigera profil", "EditUser", "User")
+    </div>
+</div>

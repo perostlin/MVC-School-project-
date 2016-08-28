@@ -1,0 +1,39 @@
+﻿@model RecensionsProjekt.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Logga in";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+
+    <h2>Logga in</h2>
+
+    @using (@Html.BeginForm("UserLogIn", "Account"))
+    {
+        <div>
+            @Html.Label("Användarnamn:")
+            <p>
+                @Html.TextBoxFor(x => x.Username)
+                @Html.ValidationMessageFor(x => x.Username, null, new { @class = "ui-state-error-text" })
+            </p>
+        </div>
+
+        <div>
+            @Html.Label("Lösenord:")
+            <p>
+                @Html.PasswordFor(x => x.Password)
+                @Html.ValidationMessageFor(x => x.Password, null, new { @class = "ui-state-error-text" })
+            </p>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Logga in</button>
+        </div>
+        <p>
+            @Html.ValidationMessage("InvalidCredentialsError", new { @class = "ui-state-error-text" } )
+        </p>
+    }
+    @Html.ActionLink("Registrera dig här!", "Register", "Account")
+
+</body>
+

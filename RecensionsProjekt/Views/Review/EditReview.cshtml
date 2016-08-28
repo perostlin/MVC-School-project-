@@ -1,0 +1,66 @@
+﻿@model RecensionsProjekt.Models.ReviewViewModel
+@{
+    ViewBag.Title = "Ändra recension";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ändra recension</h2>
+
+@using (@Html.BeginForm("EditSelectedReview", "Review"))
+{
+    @Html.HiddenFor(x => x.ReviewID)
+    <p>
+        @Html.Label("Titel:")
+    </p>
+    <p>
+        @Html.TextBoxFor(x => x.Title)
+        @Html.ValidationMessageFor(x => x.Title, null, new { @class = "ui-state-error-text" })
+    </p>
+    <p>
+        @Html.Label("Beskrivning:")
+    </p>
+    <p>
+        @Html.TextAreaFor(x => x.Description)
+        @Html.ValidationMessageFor(x => x.Description, null, new { @class = "ui-state-error-text" })
+    </p>
+    <p>
+        @Html.Label("Typ:")
+    </p>
+    <p>
+        @Html.DropDownListFor(x => x.TypeOfReviewValue, Model.Values)
+        @Html.ValidationMessageFor(x => x.TypeOfReviewValue, null, new { @class = "ui-state-error-text" })
+    </p>
+    <p>
+        @Html.Label("Betyg:")
+    </p>
+    <p>
+        @foreach(var item in Model.RatingValues)
+        {
+            @Html.Label(item.Text)
+            @Html.RadioButtonFor(x => x.UserRating, item.Value)
+        }
+        @Html.ValidationMessageFor(x => x.UserRating, null, new { @class = "ui-state-error-text" })
+    </p>
+    <div>
+        <input type="submit" value="Ändra recension" class="btn btn-success" onclick="return confirm('Vill du ändra denna recension?')" />
+    </div>
+}
+
+<h2>Ändra bild</h2>
+<div>
+    <h4>Nuvarande recensionsbild:</h4>
+    @if (System.IO.File.Exists(Server.MapPath("~/Images/ReviewImages/" + Model.ReviewImagePath)))
+    {
+        <img class="Images" src="~/Images/ReviewImages/@Model.ReviewImagePath" />
+    }
+    else
+    {
+        <img class="Images" src="~/Images/Shared/default-user-image.png" />
+    }
+    @using (Html.BeginForm("Upload", "Review", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.HiddenFor(x => x.ReviewID)
+        <input type="file" name="file" />
+        <input type="submit" name="Submit" id="Submit" value="Ladda upp" class="btn btn-primary" onclick="return confirm('Är du säker på att du vill ladda upp denna bild?')" />
+    }
+</div>

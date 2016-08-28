@@ -1,0 +1,56 @@
+﻿@model RecensionsProjekt.Models.ReviewViewModel
+
+@{
+    ViewBag.Title = "Ny recension";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Skapa ny recension</h2>
+
+@using (@Html.BeginForm("CreateNewReview", "Review", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <p>
+        @Html.Label("Titel:")
+    </p>
+    <p>
+        @Html.TextBoxFor(x => x.Title)
+        @Html.ValidationMessageFor(x => x.Title, null, new { @class = "ui-state-error-text" })
+    </p>
+    <p>
+        @Html.Label("Beskrivning:")
+    </p>
+    <p>
+        @Html.TextAreaFor(x => x.Description)
+        @Html.ValidationMessageFor(x => x.Description, null, new { @class = "ui-state-error-text" })
+    </p>
+    <p>
+        @Html.Label("Typ:")
+    </p>
+    <p>
+        @Html.DropDownListFor(x => x.TypeOfReviewValue, Model.Values)
+        @Html.ValidationMessageFor(x => x.TypeOfReviewValue)
+    </p>
+    <p>
+        @Html.Label("Betyg:")
+    </p>
+    <p>
+        @foreach(var item in Model.RatingValues)
+        {
+            @Html.Label(item.Text)
+            @Html.RadioButtonFor(x => x.UserRating, item.Value)
+        }
+        @Html.ValidationMessageFor(x => x.UserRating)
+    </p>
+    <p>
+        @Html.ValidationMessage("InvalidRating", new { @class = "ui-state-error-text" })
+    </p>
+    <p>
+        <h3>
+            Lägg till en bild:
+        </h3>
+        <input type="file" name="file" />
+    </p>
+    <div>
+        <input type="submit" value="Skapa recension" class="btn btn-success" onclick="return confirm('Vill du skapa en ny recension?')" />
+    </div>
+}

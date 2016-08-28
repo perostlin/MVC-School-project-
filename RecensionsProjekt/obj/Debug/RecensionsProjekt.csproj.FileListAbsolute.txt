@@ -1,0 +1,74 @@
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\csc.exe
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\vbc.exe
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\VBCSCompiler.exe
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\RecensionsProjekt.dll.config
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\RecensionsProjekt.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\RecensionsProjekt.pdb
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.SqlServer.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Helpers.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Mvc.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Razor.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Razor.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.SqlServer.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Razor.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Razor.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Helpers.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Mvc.xml
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\obj\Debug\RecensionsProjekt.dll
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\obj\Debug\RecensionsProjekt.pdb
+C:\Users\Per\Documents\Visual Studio 2015\Projects\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\obj\Debug\RecensionsProjekt.csprojResolveAssemblyReference.cache
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\csc.exe
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\vbc.exe
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\VBCSCompiler.exe
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\RecensionsProjekt.dll.config
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\RecensionsProjekt.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\RecensionsProjekt.pdb
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.SqlServer.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Helpers.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Mvc.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Razor.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Razor.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\EntityFramework.SqlServer.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Razor.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Webpages.Razor.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Helpers.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\bin\System.Web.Mvc.xml
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\obj\Debug\RecensionsProjekt.csprojResolveAssemblyReference.cache
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\obj\Debug\RecensionsProjekt.dll
+C:\Users\Per\Dropbox\MVC PROJEKT\WebbutvecklingsProjekt\RecensionsProjekt\RecensionsProjekt\obj\Debug\RecensionsProjekt.pdb

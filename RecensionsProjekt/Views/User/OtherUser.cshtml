@@ -1,0 +1,77 @@
+﻿@model RecensionsProjekt.Models.UserViewModel
+
+@{
+    ViewBag.Title = @Model.Username;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Firstname's profil:</h2>
+
+<div>
+    @if (System.IO.File.Exists(Server.MapPath("~/Images/ProfileImages/" + Model.ProfileImagePath)))
+    {
+        <img class="Images" src="~/Images/ProfileImages/@Model.ProfileImagePath" />
+    }
+    else
+    {
+        <img class="Images" src="~/Images/Shared/default-user-image.png" />
+    }
+</div>
+
+<div>
+    <p>
+        Förnamn: @Model.Firstname
+    </p>
+    <p>
+        Efternamn: @Model.Lastname
+    </p>
+    <p>
+        Användarnamn: @Model.Username
+    </p>
+    <p>
+        Email: @Model.Email
+    </p>
+</div>
+
+<h2>@Model.Firstname's recensioner:</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Titel</th>
+        <th>Beskrivning</th>
+        <th>Skapad den</th>
+        <th>Betyg</th>
+        <th>Typ</th>
+    </tr>
+    @foreach (var item in Model.ReviewViewModelList)
+    {
+        <tr>
+            <td>
+                @Html.Label(item.Title)
+            </td>
+            <td>
+                @Html.Label(item.Description)
+            </td>
+            <td>
+                @Html.Label(item.CreatedDate)
+            </td>
+            <td>
+                @if (item.UserRating == 1)
+                {
+                    @Html.Label(item.UserRating.ToString() + " stjärna")
+                }
+                else
+                {
+                    @Html.Label(item.UserRating.ToString() + " stjärnor")
+                }
+            </td>
+            <td>
+                @Html.Label(item.TypeOfReviewValue)
+            </td>
+            <td>
+                @Html.ActionLink("Visa", "ShowReview", "Review", new { item.ReviewID }, null)
+            </td>
+        </tr>
+    }
+
+</table>

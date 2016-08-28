@@ -1,0 +1,82 @@
+﻿@model RecensionsProjekt.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Ändra användare";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/SiteScripts/UserScript.js"></script>
+
+<div id="edit-user-content-wrapper">
+    <div id="edit-user-information">
+        <h2>Ändra profil</h2>
+        @using (@Html.BeginForm("UserSaveChanges", "User"))
+        {
+            <p>
+                @Html.Label("Förnamn:")
+            </p>
+            <p>
+                @Html.TextBoxFor(x => x.Firstname)
+                @Html.ValidationMessageFor(x => x.Firstname, null, new { @class = "ui-state-error-text" })
+            </p>
+            <p>
+                @Html.Label("Efternamn:")
+            </p>
+            <p>
+                @Html.TextBoxFor(x => x.Lastname)
+                @Html.ValidationMessageFor(x => x.Lastname, null, new { @class = "ui-state-error-text" })
+            </p>
+            <p>
+                @Html.Label("Användarnamn:")
+            </p>
+            <p>
+                @Html.TextBoxFor(x => x.Username)
+                @Html.ValidationMessageFor(x => x.Username, null, new { @class = "ui-state-error-text" })
+            </p>
+            <p>
+                @Html.Label("Email:")
+            </p>
+            <p>
+                @Html.TextBoxFor(x => x.Email)
+                @Html.ValidationMessageFor(x => x.Email, null, new { @class = "ui-state-error-text" })
+            </p>
+            <p>
+                @Html.ValidationMessage("AlreadyExistsError")
+            </p>
+            <div>
+                <input type="submit" value="Spara ändringar" class="btn btn-success" onclick="return confirm('Vill du spara dina ändringar?')" />
+            </div>
+        }
+    </div>
+
+    <div id="edit-user-profile-picture">
+        <h2>Lägg till bild</h2>
+        <h4>Nuvarande profilbild:</h4>
+        @if (System.IO.File.Exists(Server.MapPath("~/Images/ProfileImages/" + Model.ProfileImagePath)))
+        {
+            <img class="Images" src="~/Images/ProfileImages/@Model.ProfileImagePath" />
+        }
+        else
+        {
+            <img class="Images" src="~/Images/Shared/default-user-image.png" />
+        }
+        @using (Html.BeginForm("Upload", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input type="file" name="file" />
+            <input type="submit" name="Submit" id="Submit" value="Ladda upp" class="btn btn-primary" onclick="return confirm('Är du säker på att du vill ladda upp denna bild?')" />
+        }
+    </div>
+
+    <div id="edit-user-password">
+        <h2>Ändra lösenord</h2>
+        @Html.ActionLink("Klicka här för att ändra ditt lösenord", "EditPassword", "User", new { @class = "btn btn-info" })
+    </div>
+
+    <div id="edit-user-remove">
+        <h2>Tabort ditt konto</h2>
+        @using (Html.BeginForm("RemoveCurrentUser", "User"))
+        {
+            <input type="submit" value="Ta bort konto" class="btn btn-danger" onclick="return confirm('Är du säker på att du vill ta bort ditt konto?')" />
+        }
+    </div>
+</div>

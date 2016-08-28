@@ -1,0 +1,123 @@
+﻿@model RecensionsProjekt.Models.AllReviewViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/SiteScripts/ShowReviewScript.js"></script>
+
+<h2>Recension för: @Model.Title</h2>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">De som betygsatt är:</h4>
+            </div>
+            <div id="modal-wrapper" class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    @if (System.IO.File.Exists(Server.MapPath("~/Images/ReviewImages/" + Model.ReviewImagePath)))
+    {
+        <img class="Images" src="~/Images/ReviewImages/@Model.ReviewImagePath" />
+    }
+    else
+    {
+        <img class="Images" src="~/Images/Shared/default-user-image.png" />
+    }
+</div>
+
+<div>
+    <p>
+        Titel: @Model.Title
+    </p>
+    <p>
+        Beskrivning: @Model.Description
+    </p>
+    <p>
+        Typ: @Model.TypeOfReviewValue
+    </p>
+    <p>
+        Författarens betyg: @Model.UserRating stjärnor
+    </p>
+    <p>
+        Recension betyg: <button id="rating" class="btn-link" value="@Model.ReviewID" data-toggle="modal" data-target="#myModal">@Model.TotalRating.ToString("n1")</button> av 5
+    </p>
+    <p>
+        Antal gillar: <span id="likesSpan">@Model.Likes</span>
+    </p>
+    <p>
+        Antal ogillar: <span id="disLikesSpan">@Model.DisLikes</span>
+    </p>
+    <p>
+        Författaren: @Html.ActionLink(Model.CreatedByName, "OtherUser", "User", new { Model.CreatorUserID }, null)
+    </p>
+
+    @{
+        if (Session["loggedInUser"] == null)
+        {
+            Response.Redirect("/Home/Index");
+        }
+        else
+        {
+            Guid userID = (Guid)Session["loggedInUser"];
+            if (Model.CreatorUserID != userID)
+            {
+                <h3>Betygsätt recension:</h3>
+                <div>
+                    @foreach (var item in Model.RatingValues)
+                    {
+                        @Html.Label(item.Text)
+                        @Html.RadioButtonFor(x => x.UserRating, item.Value, new { id = "rdoRateReview", @class = "radio" })
+                    }
+                    <button id="btnRateReview" class="btn btn-primary">Betygsätt</button>
+                </div>
+                <div>
+                    <button id="btnLikeReview" value="@Model.ReviewID" class="btn btn-success">Gilla</button>
+                    <button id="btnDislikeReview" value="@Model.ReviewID" class="btn btn-danger">Ogilla</button>
+                </div>
+            }
+        }
+    }
+</div>
+
+<h3>Kommentarer:</h3>
+<div id="comment-wrapper">
+    @if (Model.CommentToReviewList.Count > 0)
+    {
+        foreach (var item in Model.CommentToReviewList)
+        {
+            <p>
+                @Html.Label(item.User.Username + ": " + item.Comment + ", " + item.CreatedDate)
+            </p>
+        }
+    }
+    else
+    {
+        <p id="no-comments-text">Finns inga kommentarer på denna recension ännu...</p>
+    }
+
+</div>
+
+<h3>Skapa en kommentar:</h3>
+@Html.HiddenFor(x => x.ReviewID)
+<p>
+    @Html.TextArea("txtAreaComment", new { id = "txtAreaComment" })
+</p>
+<div>
+    <button id="btnAddComment" class="btn btn-primary" value="@Model.ReviewID">Klar</button>
+</div>

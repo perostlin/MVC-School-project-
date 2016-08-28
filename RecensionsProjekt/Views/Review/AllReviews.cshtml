@@ -1,0 +1,105 @@
+﻿@model List<RecensionsProjekt.Models.AllReviewViewModel>
+
+@{
+    ViewBag.Title = "Alla recensioner";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/SiteScripts/AllReviewsScript.js"></script>
+
+
+<h2>Alla recensioner</h2>
+
+<div>
+    <select id="sortReviews">
+        <option value="1">Titel</option>
+        <option value="2">Ranking</option>
+        <option value="3">Gillar</option>
+        <option value="4">Ogillar</option>
+        <option value="5">Datum</option>
+        <option value="6">Typ</option>
+    </select>
+    <button id="btnSortReviews" class="btn btn-primary">Sortera</button>
+</div>
+<div>
+    <input id="tbSearchInput" type="text" />
+    <button id="btnSearchReview" class="btn btn-primary">Sök</button>
+</div>
+
+@if (Model != null)
+{
+    <table id="allReviewsTable" class="table table-bordered table-hover">
+        <tr>
+            <th>Titel</th>
+            <th>Beskrivning</th>
+            <th>Skapad den</th>
+            <th>Betyg</th>
+            <th>Totala betyget</th>
+            <th>Typ</th>
+            <th>Gillar</th>
+            <th>Ogillar</th>
+            <th>Författare</th>
+            <th></th>
+        </tr>
+        <tbody id="tableWrapper">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Title
+                    </td>
+                    <td>
+                        @item.Description
+                    </td>
+                    <td>
+                        @item.CreatedDate
+                    </td>
+                    <td>
+                        @if (item.UserRating == 1)
+                        {
+                            @item.UserRating@: stjärna
+                    }
+                    else
+                    {
+                            @item.UserRating@: stjärnor
+                    }
+                    </td>
+                    <td>
+                        @item.TotalRating.ToString("n1")
+                    </td>
+                    <td>
+                        @item.TypeOfReviewValue
+                    </td>
+                    <td>
+                        @item.Likes
+                    </td>
+                    <td>
+                        @item.DisLikes
+                    </td>
+                    <td>
+                        @if (item.HasProfilePicture == true)
+                    {
+                            <img id="allReviewImg" src="@Url.Content("~/Images/ProfileImages/" + @item.CreatorUserID + ".png")" />
+                        }
+                        else
+                        {
+                            <img id="allReviewImg" src="~/Images/Shared/default-user-image.png" />
+                        }
+                        @Html.ActionLink(item.CreatedByName, "OtherUser", "User", new { item.CreatorUserID }, null)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Visa", "ShowReview", "Review", new { item.ReviewID }, null)
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+    <ul class="pagination pagination-lg pager" id="myPager"></ul>
+}
+else
+{
+    <h3>Finns inga recensioner att visa än... Skapa en själv för att komma igång!</h3>
+}
+

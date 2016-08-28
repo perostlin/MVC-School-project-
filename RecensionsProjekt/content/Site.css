@@ -1,0 +1,81 @@
+﻿/* Här ändras layout som påverkar hela sidan. */
+body {
+    
+}
+
+#logo-type {
+    margin-left: 385px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+/* Error-page */
+.error-image {
+    margin-left: 430px;
+}
+
+.error-text {
+    height: 120px;
+    width:950px;
+    margin-left: 100px;
+}
+
+/* Editera användare */
+#edit-user-content-wrapper {
+    height: auto;
+    width: 900px;
+    overflow: hidden;
+}
+
+#edit-user-information {
+    height: auto;
+    width: 200px;
+    float: left;
+}
+
+#edit-user-password {
+    height: auto;
+    width: 270px;
+    float: left;
+}
+
+#edit-user-profile-picture {
+    height: auto;
+    width: 200px;
+    float: left;
+}
+
+#edit-user-remove {
+    height: auto;
+    width: 200px;
+    float: left;
+}
+
+/* Map */
+#map-canvas {
+    height: 350px;
+    width: 350px;
+}
+
+/* AllReviews-sidan */
+#allReviewImg {
+    height: 25px;
+    width: 25px;
+}
+
+/* Gemensam-klass för bilder både för användare samt recensioner. */
+.Images {
+    height: 175px;
+    width: 165px;
+}
+
+.logout.container {
+    float: right;
+    color: white;
+}
+
+navbar-top-margin {
+    margin-top: 50px;
+}
